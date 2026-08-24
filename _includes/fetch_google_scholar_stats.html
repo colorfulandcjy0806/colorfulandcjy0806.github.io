@@ -1,0 +1,45 @@
+<script>
+  function normalizePaperTitle(value) {
+    return String(value || '').toLowerCase().replace(/[–—:]/g, ' ').replace(/[^a-z0-9]+/g, ' ').trim();
+  }
+  function compactNumber(value) {
+    if (value >= 1000) return (value / 1000).toFixed(1).replace(/\.0$/, '') + 'k';
+    return String(value);
+  }
+  $(document).ready(function () {
+    {% if site.google_scholar_stats_use_cdn %}
+    var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@';
+    {% else %}
+    var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/';
+    {% endif %}
+    $.getJSON(gsDataBaseUrl + 'google-scholar-stats/gs_data.json', function (data) {
+      if (typeof data.citedby === 'number') $('#citations-stat').text(data.citedby.toLocaleString('en-US'));
+      var papersByTitle = {};
+      Object.keys(data.publications || {}).forEach(function (key) {
+        var paper = data.publications[key];
+        var title = paper && paper.bib && paper.bib.title;
+        if (title) papersByTitle[normalizePaperTitle(title)] = paper;
+      });
+      $('.show_paper_citations').each(function () {
+        var title = normalizePaperTitle($(this).attr('data-title'));
+        var matched = papersByTitle[title] || Object.keys(papersByTitle).map(function (key) { return papersByTitle[key]; }).find(function (paper) {
+          var candidate = normalizePaperTitle(paper.bib.title);
+          return candidate.indexOf(title) >= 0 || title.indexOf(candidate) >= 0;
+        });
+        if (matched && typeof matched.num_citations === 'number') $(this).text(matched.num_citations);
+      });
+    });
+    var starTTL = 6 * 60 * 60 * 1000;
+    $('.gh-stars[data-repo]').each(function () {
+      var element = $(this), repo = element.attr('data-repo'), key = 'ghstars:' + repo, cached;
+      try { cached = JSON.parse(localStorage.getItem(key)); } catch (e) {}
+      if (cached && typeof cached.n === 'number') element.text(compactNumber(cached.n));
+      if (cached && Date.now() - cached.t < starTTL) return;
+      $.getJSON('https://api.github.com/repos/' + repo, function (data) {
+        if (typeof data.stargazers_count !== 'number') return;
+        element.text(compactNumber(data.stargazers_count));
+        try { localStorage.setItem(key, JSON.stringify({ n: data.stargazers_count, t: Date.now() })); } catch (e) {}
+      });
+    });
+  });
+</script>

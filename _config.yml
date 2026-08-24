@@ -1,1 +1,59 @@
-theme: jekyll-theme-slate
+title: "Chen Junyang"
+description: "Multimodal AI · Agentic RL · Environment-Grounded Reasoning"
+repository: "Colorfulandcjy0806/colorfulandcjy0806.github.io"
+url: "https://colorfulandcjy0806.github.io"
+google_scholar_stats_use_cdn: true
+
+author:
+  name: "Chen Junyang 陈骏扬"
+  avatar: "photos/profile.png"
+  bio: "Multimodal AI, agentic RL, and environment-grounded reasoning."
+  location: "Nanjing, China"
+  employer: "Southeast University · PALM Lab"
+  googlescholar: "https://scholar.google.com/citations?hl=zh-CN&user=Ryiq-WcAAAAJ"
+  email: "chenjunyang0806@gmail.com"
+  github: "Colorfulandcjy0806"
+
+include:
+  - _pages
+  - files
+exclude:
+  - google_scholar_crawler
+  - node_modules
+  - vendor
+  - README.md
+keep_files:
+  - .git
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  entity_output: as_char
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      author_profile: false
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+timezone: Asia/Shanghai
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
