@@ -60,8 +60,7 @@ redirect_from:
 <section class="internship-card" aria-labelledby="internship">
   <div class="internship-topline">
     <span>2026.03–present</span>
-    <span class="brand-lockup"><img class="alibaba-inline-logo" src="images/logos/alibaba.svg" alt="Alibaba Group logo"></span>
-    <span class="brand-lockup"><img class="qwen-inline-logo" src="images/logos/qwen.png" alt="Qwen logo"></span>
+    <span class="brand-lockup"><img class="alibaba-qwen-lockup" src="images/logos/alibaba-qwen-business-unit.png" alt="Alibaba and Qwen Business Unit"></span>
   </div>
   <div class="internship-title-row">
     <h2 id="internship">Research Intern on Agent Post-Training &amp; Interactive Reinforcement Learning</h2>

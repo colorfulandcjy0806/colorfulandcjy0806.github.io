@@ -1,4 +1,6 @@
 jsonpickle==4.0.5
 scholarly==1.7.11
-httpx==0.27.2
+# scholarly 1.7.x imports bibtexparser.bibdatabase, which was removed in 2.x.
+bibtexparser==1.4.3
+httpx[socks]==0.27.2
 tqdm

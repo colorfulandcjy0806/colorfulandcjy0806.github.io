@@ -1275,17 +1275,11 @@ a.award-card:hover .ac-title { color: var(--text); }
   vertical-align: middle;
 }
 
-.alibaba-inline-logo {
+.alibaba-qwen-lockup {
   width: auto;
-  height: 18px;
+  height: 32px;
+  max-width: min(470px, 62vw);
   object-fit: contain;
-}
-
-.qwen-inline-logo {
-  width: auto;
-  height: 21px;
-  object-fit: contain;
-  filter: saturate(0.95);
 }
 
 .internship-title-row {
@@ -1794,7 +1788,7 @@ a.award-card:hover .ac-title { color: var(--text); }
   .internship-card ul { grid-template-columns: 1fr; }
   .internship-title-row { flex-direction: column; align-items: flex-start; gap: 0.45em; }
   .internship-flow { grid-template-columns: 1fr; }
-  .qwen-inline-logo { height: 21px; }
+  .alibaba-qwen-lockup { height: 25px; max-width: 68vw; }
   .community-gallery { grid-template-columns: 1fr; }
   .community-gallery img { height: auto; max-height: 260px; }
   .community-feature,
