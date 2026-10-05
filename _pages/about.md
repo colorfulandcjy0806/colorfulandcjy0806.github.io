@@ -159,16 +159,18 @@ redirect_from:
   <section class="recognition-card">
     <h3>Reviewer Experience</h3>
     <ul class="compact-list">
+      <li>Reviewer for International Conference on Learning Representations (ICLR 2027)</li>
       <li>Reviewer for Neural Information Processing Systems (NeurIPS 2026)</li>
+      <li>Reviewer for International Conference on Machine Learning (ICML 2026)</li>
       <li>Reviewer for ACM Multimedia Conference (ACM MM 2025–2026)</li>
       <li>Reviewer for AAAI Conference on Artificial Intelligence (AAAI 2025–2027)</li>
       <li>Reviewer for Frontiers in Plant Science</li>
-      <li>Reviewer for International Conference on Machine Learning (ICML 2026)</li>
     </ul>
   </section>
   <section class="recognition-card">
     <h3>Awards</h3>
     <ul class="compact-list">
+      <li>Outstanding Postgraduate Student Cadre Model, Southeast University (东南大学优秀研究生干部标兵, Top 1%), 2026.09</li>
       <li>Excellent Postgraduate Student Cadre, Southeast University (东南大学优秀研究生干部, Top 5%), 2025.10</li>
       <li>Outstanding Graduates of Sichuan Province (四川省优秀毕业生, Top 4%), China, 2024.06</li>
       <li>Outstanding Student Model (优秀学生标兵, the highest honor of the university, only 10 students selected, sole recipient in the entire college), Sichuan Agricultural University, 2022–2023</li>
