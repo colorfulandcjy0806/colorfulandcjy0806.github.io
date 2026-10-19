@@ -170,8 +170,8 @@ redirect_from:
   <section class="recognition-card">
     <h3>Awards</h3>
     <ul class="compact-list">
-      <li>Outstanding Postgraduate Student Cadre Model, Southeast University (东南大学优秀研究生干部标兵, Top 1%), 2026.09</li>
-      <li>Excellent Postgraduate Student Cadre, Southeast University (东南大学优秀研究生干部, Top 5%), 2025.10</li>
+      <li>China National Scholarship (国家奖学金, Top 0.2%), 2026</li>
+      <li>Outstanding Postgraduate Student Cadre Model, Southeast University (东南大学优秀研究生干部标兵, Top 1%), 2026.09, 2025.10</li>
       <li>Outstanding Graduates of Sichuan Province (四川省优秀毕业生, Top 4%), China, 2024.06</li>
       <li>Outstanding Student Model (优秀学生标兵, the highest honor of the university, only 10 students selected, sole recipient in the entire college), Sichuan Agricultural University, 2022–2023</li>
       <li>China National Scholarship (国家奖学金, Top 0.2%), 2023</li>
