@@ -1474,6 +1474,7 @@ a.award-card:hover .ac-title { color: var(--text); }
   display: block;
   width: 100%;
   height: auto;
+  max-height: 360px;
   object-fit: contain;
   background: var(--surface-2);
   border-radius: 10px;
@@ -1489,6 +1490,14 @@ a.award-card:hover .ac-title { color: var(--text); }
   color: var(--text-soft);
   font-size: 0.92rem;
   line-height: 1.45;
+}
+.pub-authors .author-highlight {
+  color: var(--text);
+  font-weight: 800;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
 }
 .pub-row .meta,
 .feature .meta {
@@ -1817,6 +1826,6 @@ a.award-card:hover .ac-title { color: var(--text); }
   .hero-contact { font-size: 0.86rem; }
   .news-compact li { grid-template-columns: 1fr; gap: 2px; }
   .pub-row { grid-template-columns: 1fr; }
-  .pub-row img { width: 100%; height: auto; max-height: none; }
+  .pub-row img { width: 100%; height: auto; max-height: 300px; }
   .pub-row .pub-actions { justify-content: flex-end; }
 }
