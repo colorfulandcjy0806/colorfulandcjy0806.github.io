@@ -105,7 +105,7 @@ redirect_from:
       <h3><a href="{{ paper.paper }}">{{ paper.title }}</a></h3>
       <p class="pub-authors">{{ paper.authors }}</p>
       <p class="pub-venue">{{ paper.venue_detail }}</p>
-      <div class="meta">
+      <div class="meta pub-actions">
         <a class="chip chip-arxiv" href="{{ paper.paper }}">Paper</a>
         {% if paper.code %}<a class="chip" href="{{ paper.code }}">Code</a>{% endif %}
         {% if paper.citation_label %}<span class="chip chip-cite">{{ paper.citation_label }}</span>{% endif %}
