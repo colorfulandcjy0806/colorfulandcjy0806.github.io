@@ -1,3 +1,25 @@
+- title: "ViStep-RL: Stepwise Reinforcement Learning for Long-Horizon Visual Agents"
+  venue: "arXiv 2026"
+  venue_detail: "arXiv preprint, 2026.11"
+  year: 2026
+  authors: "Junyang Chen, Yao Qin, Xiao Li, Ningchao Wang, Yiguo Qiao, Wenbin Li, Xin Geng"
+  image: "images/papers/vistep-rl-overview.png"
+  image_alt: "ViStep-RL framework for evidence-grounded visual agents"
+  description_en: "Uses dependency-linked, evidence-bearing subgoals, verifier-based progress rewards, and active memory to train long-horizon visual agents."
+  description_zh: "以依赖关联的证据子目标、验证器驱动的进展奖励和主动记忆，训练长程视觉智能体。"
+  paper: "https://arxiv.org/abs/2611.24170"
+
+- title: "SEER: Semantic Evidence for Executable Region Propagation in Open-Vocabulary Semantic Segmentation"
+  venue: "arXiv 2026"
+  venue_detail: "arXiv preprint, 2026.11"
+  year: 2026
+  authors: "Junyang Chen, Xiao Li, Yiguo Qiao, Wenbin Li"
+  image: "images/papers/seer-overview.png"
+  image_alt: "SEER framework for evidence-guided open-vocabulary segmentation repair"
+  description_en: "A training-free test-time repair method that verifies regional evidence and propagates actionable labels in open-vocabulary segmentation."
+  description_zh: "一种无需训练的测试时修复方法，通过区域证据验证并在开放词汇分割中传播可执行标签。"
+  paper: "https://arxiv.org/abs/2611.24152"
+
 - title: "Positive-Unlabeled Reinforcement Learning Distillation for On-Premise Small Models"
   venue: "ICML 2026"
   venue_detail: "ICML 2026 (CCF-A, poster), 2026.05"
